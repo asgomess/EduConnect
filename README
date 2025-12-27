@@ -1,0 +1,22 @@
+EduConnect
+Full-stack platform connecting volunteer teachers with underprivileged students. Built with Java Spring MVC & a custom JS MVC frontend. Manages complex scheduling (Appointments) using PostgreSQL/Hibernate. Demonstrates clean architecture, relational DB integrity, and social impact through tech.
+
+🌟 Mission EduConnect is a social-impact web application designed to democratize education. It provides a bridge between volunteer educators and students with limited financial access. The platform allows teachers to donate their time by scheduling remote classes, while students can browse and enroll in sessions to further their education.
+
+🏗️ Architecture & Design Patterns This project focuses on Separation of Concerns and modularity:
+
+Backend: Java Spring MVC following a Service-DAO pattern.
+
+Frontend: A custom-built Single Page Application (SPA) logic using the MVC (Model-View-Controller) pattern in Vanilla JavaScript.
+
+Persistence: Relational database management via Hibernate/JPA with a manual transaction management layer to ensure data integrity.
+
+🛠️ Tech Stack Backend: Java, Spring Framework, Maven. Persistence: Hibernate, JPA, PostgreSQL. Frontend: JavaScript (ES6+), HTML5, CSS3. Architecture: RESTful API, MVC Pattern.
+
+🚀 Key Features Teacher Management: Tracks academic degrees and areas of knowledge. Student Portals: Unique registration focused on educational history and parent contact. Centralized Scheduling: The "Appointment" engine connects Teachers, Students, and Subjects into a cohesive timeline. Optimistic Locking: Implemented versioning across all models to handle concurrent data updates.
+
+🧪 Technical Challenges Solved Circular Reference Management: Resolved JSON infinite recursion issues in many-to-many relationships using Jackson annotations. Manual Transaction Control: Implemented a custom TransactionManager to handle the persistence context without relying solely on default Spring magic—providing deeper control over the database lifecycle. Relational Mapping: Configured complex @ManyToMany join tables for student attendance tracking.
+
+👤 Authors Andrew Gomes Felipe Bernardo Luana Buscariolo Márcio Moreira
+
+🎓 Master’s Candidate in Informatics Engineering 🧬 Biomedical Engineer turned Full-Stack Developer
